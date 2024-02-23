@@ -1,0 +1,343 @@
+:root {
+    --primary-brand-color: #4D5AE5;
+    --pressed-state-color: #404BBF;
+    --dark-color: #2E2F42;
+    --success-color: #31D0AA;
+    --text-color: #434455;
+    --subtle-text-color: #8E8F99;
+    --accent-color: #E7E9FC;
+    --light-color: #F4F4FD;
+    --modal-overlay-color: #2E2F42;
+    --hero-bg-color: #2E2F42;
+    --white-bg-color: #FFFFFF;
+    --modal-bg-color: #FCFCFC;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--white-bg-color);
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color)
+  }
+
+ul, ol {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+header a{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.section {
+    padding: 120px 156px;
+}
+
+.container {
+    width: 1158px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    color: var(--dark-color);
+    letter-spacing: 0.03em;
+    padding-right: 76px;
+    display: flex;
+    align-items: center;
+
+}
+
+.logo-color {
+    color: var(--primary-brand-color);
+}
+
+.nav-item {
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.nav-item:hover,
+.nav-item:focus {
+    color: var(--pressed-state-color);
+}
+
+.contacts-info {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+}
+
+.contacts-info:hover,
+.contacts-info:focus {
+    color: var(--pressed-state-color);
+}
+
+.order-service {
+    background-color: var(--dark-color);
+    height: 600px;
+}
+
+.order-service-title {
+    max-width: 496px;
+    margin-bottom: 48px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--white-bg-color);
+}
+
+.order-service-btn {
+    color: var(--white-bg-color);
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    background-color: var(--primary-brand-color);
+    width: 169px;
+    height: 56px;
+    border-radius: 4px;
+}
+
+.order-service-btn:hover,
+.order-service-btn:focus {
+    background-color: var(--pressed-state-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+.features {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.features-item {
+    display: flex;
+    flex-direction: column;
+    width: 264px;
+}
+
+.element-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--dark-color);
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+.extra-margin {
+    margin-left: 16px;
+}
+
+
+.works-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+    margin-left: 16px;
+}
+
+.team-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    margin-bottom: 32px;
+}
+
+.features-text {
+    color: var(--text-color);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.section-title {
+    font-size: 36px;
+    color: var(--dark-color);
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    margin: 0 auto;
+    margin-bottom: 72px;
+}
+
+.team {
+    background-color: var(--light-color);
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.team-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.footer {
+    background-color: var(--dark-color);
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-text {
+    color: var(--light-color);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    width: 264px;
+    margin-top: 16px;
+}
+
+.logo-white {
+    color: var(--light-color);
+}
+
+.works-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.works-btn {
+    color: var(--primary-brand-color);
+    background-color: var(--light-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding: 12px 24px;
+    margin-bottom: 72px;
+    border-radius: 4px;
+    border: 1px solid var(--accent-color);
+}
+
+.works-btn:hover,
+.works-btn:focus {
+    color: var(--white-bg-color);
+    background-color: var(--pressed-state-color);
+}
+
+.works-btn-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.works-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.works-list-item {
+    width: calc((100% - 48px) / 3);
+    border: 1px solid var(--accent-color);
+    margin-bottom: 24px;
+    padding: 0;
+}
+
+.works-list-item img {
+    width: 100%;
+	object-fit: fill;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: var(--accent-color) 1px solid;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    line-height: 24px;
+    gap: 40px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.order-service .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.samples-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.samples {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+
