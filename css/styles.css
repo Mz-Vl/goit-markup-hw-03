@@ -25,7 +25,7 @@ body {
 a {
     text-decoration: none;
     color: var(--text-color)
-  }
+}
 
 ul, ol {
     list-style-type: none;
@@ -54,7 +54,7 @@ header {
     border-bottom: var(--accent-color) 1px solid;
 }
 
-header a{
+header a {
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -85,7 +85,6 @@ header a{
     margin-right: 76px;
     display: flex;
     align-items: center;
-
 }
 
 .logo-color {
@@ -228,10 +227,15 @@ header a{
     align-items: center;
 }
 
+.team-img {
+    margin-bottom: 32px;
+}
+
 .team-item {
     text-align: center;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background-color: var(--white-bg-color);
 }
 
 .team-text {
@@ -297,6 +301,7 @@ header a{
 
 .works-list-item {
     width: calc((100% - 48px) / 3);
+}
 
 .works-list-item img {
     width: 100%;
@@ -315,7 +320,7 @@ header a{
     justify-content: space-between;
 }
 
-.menu{
+.menu {
     display: flex;
     align-items: center;
     line-height: 24px;
@@ -345,5 +350,3 @@ header a{
     flex-direction: row;
     gap: 24px;
 }
-
-
